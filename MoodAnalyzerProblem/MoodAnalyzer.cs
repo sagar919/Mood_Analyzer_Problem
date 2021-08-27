@@ -2,7 +2,7 @@
 
 namespace MoodAnalyzerProblem
 {
-    class MoodAnalyzer
+    public class MoodAnalyzer
     {
         public string AnalyzeMood(string message)
         {
