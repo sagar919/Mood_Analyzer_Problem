@@ -12,11 +12,22 @@ namespace MoodAnalyzerTest
         [Test]
         public void GivenSadMood_ShouldReturnSad()
         {
-            MoodAnalyzer moodAnalyser = new MoodAnalyzer();
+            MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
             string expected = "Sad Mood";
             string message = "I am ver Sad";           
-            string mood = moodAnalyser.AnalyzeMood(message);
+            string mood = moodAnalyzer.AnalyzeMood(message);
             Assert.AreEqual(expected, mood);
+        }
+
+        [Test]
+        public void GivenHappyMood_ShouldReturnhappy()
+        {
+            MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
+            string expected = "Happy Mood";
+            string message = "I am very Happy";
+            string mood = moodAnalyzer.AnalyzeMood(message);
+            Assert.AreEqual(expected, mood);
+
         }
     }
 }
